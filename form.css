@@ -1,0 +1,74 @@
+form div:nth-child(1)
+{
+  grid-column: -1 / 1;
+  background-color: rgb(18, 18, 86); 
+  color: white; 
+  font-size: 25px; 
+  text-align: center; 
+  padding: 10px;
+  margin: 0;
+}
+
+ input:invalid{
+     background-color: indianred;
+ }
+
+ form {
+
+    display: grid;
+    grid-template-columns: repeat(1, 1fr 2fr);
+    gap: 10px 15px;
+    align-items: center;
+  }
+  
+  form label 
+  {
+    padding: 10px;
+    font-size: 20px;
+    justify-self: start;
+  }
+  
+  form input 
+  {
+    padding: 5px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  form button {
+    width: 150px;
+    justify-self: center;
+    padding: 10px;
+    margin: 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  form button:hover {
+    background-color: #3a863e;
+  }
+  select {
+    font-size: 20px; 
+    padding: 5px;    
+}
+input{
+font-size: 20px;
+}
+input:required:hover {
+    background-color: rgba(30, 143, 255, 0.515);
+    color: white;
+}
+  .options_block {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping if there are too many items for one line */
+    gap: 10px;       /* Adds spacing between items */
+}
+.buttons
+{
+    grid-column: -1/1;
+    justify-self: center;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="form.css">
+    <title>Document</title>
+</head>
+<body>
+     <form action="form.html" method="get" style=" background-color: #979eea; ">
+        <div >
+            Реєстрація на сервері
+        </div>
+        <label for="login">Логін:</label>
+        <input type="text" id="login" name="login" minlength="5" required>
+
+        <label for="password">Пароль:</label>
+        <input type="password" id="password" name="password" minlength="8" required>
+
+        <label for="confirm-password">Підтвердження паролю:</label>
+        <input type="password" id="confirm-password" name="confirm-password" required>
+
+        <div style="grid-column: -1/1; height: 3px; background-color: #ffffff; margin: 10px 0;"></div>
+
+        <label for="fio">Повне ім'я (ФІО):</label>
+        <input type="text" id="fio" name="fio" required>
+
+        <label>Стать:</label>
+        <div class = "options_block">
+            <label><input type="radio" name="gender" value="male" required> Чоловік</label>
+            <label><input type="radio" name="gender" value="female"> Жінка</label>
+        </div>
+
+        <label>Іноземні мови:</label>
+        <div class = "options_block">
+            <label><input type="checkbox" name="languages" value="english"> Англійська</label>
+            <label><input type="checkbox" name="languages" value="german"> Німецька</label>
+            <label><input type="checkbox" name="languages" value="french"> Французька</label>
+            <label><input type="checkbox" name="languages" value="spanish"> Іспанська</label>
+            <label><input type="checkbox" name="languages" value="italian"> Італійська</label>
+        </div>
+
+        <label for="activity">Сфера діяльності:</label>
+        <select id="activity" name="activity">
+            <option value="education">Освіта</option>
+            <option value="it">ІТ</option>
+            <option value="medicine">Медицина</option>
+            <option value="other">Інше</option>
+        </select>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="info">Додаткова інформація:</label>
+        <textarea id="info" name="info" rows="4"></textarea>
+
+        <div class = "buttons">
+            <button type="submit">Готово</button>
+            <button type="reset">Скасувати</button>
+        </div>
+    </form>
+</body>
+</html>
